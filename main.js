@@ -1,5 +1,6 @@
 function convertString(){
     let input = process.argv;
+    //create a dictionary to map digits to strings
     let dict = {
         0:'Zero',
         1: 'One',
@@ -12,6 +13,7 @@ function convertString(){
         8:'Eight',
         9:'Nine'
     };
+    //iterate through arrays and for each numbers converts to string to iterate its digits.
     let strComb = '';
     for(let i =2; i < input.length;i++) {    
         let numToStr = input[i].toString();
